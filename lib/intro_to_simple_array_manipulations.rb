@@ -12,9 +12,11 @@ def using_pop(arr)
 end 
 
 def pop_with_args(array)
-  pets = ["dogs", "cats", "fish", "birds"]
-  shortened = pets.pop(1)
-  p shortened
+  result = []
+  2.times do
+    result.unshift(array.pop)
+  end
+  result
 end
 
 def using_shift(arr)
